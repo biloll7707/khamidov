@@ -1,0 +1,308 @@
+.headerDiv {
+    background-image: url(../images/Rectangle\ 1.png);
+    height: 500px;
+    width: 1280px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.headerDiv::after {
+    position: absolute;
+    content: "";
+    height: 500px;
+    width: 1280px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.472);
+}
+
+
+.cars {
+    display: flex;
+    width: 500px;
+    padding-top: 50px;
+    position: relative;
+    text-align: center;
+    height: 350px;
+    overflow-x: hidden;
+    z-index: 30;
+}
+
+
+section {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    transition: all 0.3s ease;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    text-align: center;
+}
+
+
+section h1 {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+section p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+section .btncars {
+    padding: 10px 0;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 0;
+    background: #dc143c78;
+    border: none;
+    color: #ffffffb8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section .btncars:hover {
+    background: #DC143C;
+    color: #FFFFFF;
+}
+
+.inputSet {
+    bottom: 0;
+    z-index: 31;
+}
+
+.radios {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+
+}
+
+.radios:nth-child(even) {
+    margin: 0 10px;
+}
+
+.activeSlide {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.lastSlide {
+    transform: translateX(-100%);
+}
+
+.nextSlide {
+    transform: translateX(100%);
+}
+
+.secondHome {
+    background-image: url(../images/Rectangle\ 1.png);
+    height: 300px;
+    width: 1280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    padding: 100px 150px;
+}
+
+
+.secondHome::before {
+    position: absolute;
+    content: "";
+    height: 300px;
+    width: 1280px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.472);
+}
+
+
+
+.secondHomebond {
+    height: 100px;
+    width: 900px;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secondHomebond h1 {
+    width: 450px;
+    color: #FFFFFF;
+}
+
+.secondHomebond button {
+    padding: 15px 20px;
+    background-color: #dc143c78;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.secondHomebond button:hover {
+    background-color: #dc143c;
+}
+
+.commentMainDiv {
+    display: flex;
+    margin-top: 50px;
+}
+
+.commentCard {
+    margin: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textBuble {
+    position: relative;
+    width: 300px;
+    height: 260px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.textBuble:before,
+.textBuble:after {
+    content: '\0020';
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: 43%;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border: solid 20px transparent;
+    border-bottom: 10px;
+    border-top-color: #fff;
+
+}
+
+.textBuble:before {
+    bottom: -16px;
+    left: 43%;
+    z-index: 3;
+    border-top-color: black;
+}
+
+.textBuble h1 {
+    font-weight: 600;
+    font-size: 59px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #DC143C;
+    margin-top: 20px;
+}
+
+.textBuble p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.textBuble:hover {
+    background-color: #DC143C;
+}
+
+.textBuble:hover h1 {
+    color: #fff;
+}
+
+.textBuble:hover::before {
+    bottom: -16px;
+    left: 43%;
+    z-index: 3;
+    border-top-color: #DC143C;
+
+}
+@media (max-width: 600px) {
+    .headerDiv {
+        width: 450px;
+
+    }
+
+    .headerDiv::after {
+        width: 450px;
+
+    }
+
+    .cars {
+        width: 450px;
+
+    }
+
+    section {
+        width: 450px;
+    }
+
+    section h1 {
+        font-size: 30px;
+        width: 250px;
+        margin-left: 100px;
+    }
+
+    section p {
+        font-size: 14px;
+        width: 400px;
+        margin-left: 20px;
+    }
+
+    .commentMainDiv {
+        width: 450px;
+        overflow: scroll;
+        padding: 0 10px;
+    }
+
+    .secondHome {
+        width: 450px;
+        padding: 10px 15px;
+    }
+
+    .secondHome::before {
+        width: 450px;
+    }
+
+    .secondHomebond {
+        width: 450px;
+        flex-direction: column;
+
+    }
+    .secondHomebond h1 {
+        width: 400px;
+    }
+    .secondHomebond button {
+        margin-top: 50px;
+    }
+}

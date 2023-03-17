@@ -1,0 +1,23 @@
+.category-btn {
+    font-weight: bold !important;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+
+    padding: 10px 0;
+    margin: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+   border-bottom: 1px solid #fff !important;
+}
+
+.category-btn:hover span {
+    color: white !important;
+}

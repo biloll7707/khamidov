@@ -1,0 +1,26 @@
+article{
+    position: absolute;
+    top: 0;
+    left: 125px;
+    text-align: center;
+    border: 1px solid #33333372;
+    padding: 0 20px;
+    border-radius: 30px;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.scuesTxt{
+    font-size: 42px;
+    color:black;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+}
+.fadeIn{
+    opacity: 1;
+    transform: translateY(0);
+}
+.fadeOut{
+    transform: translateY(-100%);
+}

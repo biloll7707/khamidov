@@ -1,0 +1,11 @@
+.hbutton{
+    padding: 20px 50px;
+    background: #dc143cab;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+.hbutton:hover{
+    background: #DC143C;
+}
