@@ -1,8 +1,6 @@
 import { Box, Stack, Typography } from "@mui/material";
 import { useState } from "react";
-import { Navbar, Home } from "../";
-import AboutUs from "../aboutus/aboutus";
-import Contact from "../contact/contact";
+import { Navbar, Home, Contact, AboutUs, OurDrivers, OrderRide } from "../";
 import "./main.css";
 
 const Main = () => {
@@ -31,6 +29,8 @@ const Main = () => {
         {selectedCat === "About Us" && <AboutUs selectedCatHandler={selectedCatHandler}
         selectedCat={selectedCat}/>}
         {selectedCat === "Contact" && <Contact/>}
+        {selectedCat === "Order Ride" && <OrderRide/>}
+        {selectedCat === "Our Drivers" && <OurDrivers/>}
           <Typography variant={"h4"} fontWeight={"bold"} mb={2}>
             {selectedCat}
           </Typography>

@@ -1,0 +1,98 @@
+.form1{
+    display: flex;
+    flex-direction: column;
+    align-items:center;  
+    width: 400px;
+    border-radius: 20px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #DC143C;
+}
+.form1 .nameTxt{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #DC143C;
+    width: 300px;
+    padding: 10px;
+    color: #fff;
+}
+.form1 .numberTxt{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #DC143C;
+    width: 300px;
+    padding: 10px;
+    color: #fff;
+}
+
+.form1 .label1{
+    margin-top: 40px;
+}
+.form1 .label2{
+    margin-top: 20px;
+}
+.form1 .emailTxt{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #DC143C;
+    width: 300px;
+    padding: 10px;
+    color:#fff;
+}
+.form1 .label3{
+    margin-top: 20px;
+}
+.form1 .commentTxt{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #DC143C;
+    color: #fff;
+    width: 300px;
+    padding: 10px;
+    resize: none;
+}
+.form1 .btn{
+    background: radial-gradient(#965656, #6e74b9);   
+    padding: 10px 50px;
+    border: none;
+    border-radius: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.form1 .btn:hover{
+    background: radial-gradient(#e66465, #9198e5);   
+}
+article{
+    position: absolute;
+    top: 0;
+    left: 125px;
+    text-align: center;
+    border: 1px solid #DC143C;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.scuesTxt{
+    font-size: 26px;
+    color:black;
+}
+.scuesTxt i{
+    color: green;
+    font-size: 24px;
+    letter-spacing: 2;
+}
+.link{
+    text-decoration: none;
+    color: #fff;
+   
+}
+.fadeIn{
+    opacity: 1;
+    transform: translateY(0);
+}
+.fadeOut{
+    transform: translateY(-100%);
+}

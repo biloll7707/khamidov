@@ -1,4 +1,4 @@
-import { Call, CheckCircleOutline, CheckCircleOutlineOutlined, CheckCircleOutlineTwoTone, CheckCircleTwoTone, Email } from "@mui/icons-material";
+import { Call, CheckCircleTwoTone, Email } from "@mui/icons-material";
 import { Box, Paper, Stack, Typography } from "@mui/material";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
