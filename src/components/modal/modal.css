@@ -6,7 +6,7 @@
     border-radius: 20px;
     color: #fff;
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
     border: 1px solid #DC143C;
 }
 .form1 .nameTxt{
