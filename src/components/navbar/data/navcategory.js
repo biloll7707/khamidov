@@ -4,7 +4,6 @@ export const category = [
     {name: 'Order Ride'},
     {name: 'Our Drivers'},
     {name: 'Contact'},
-    {name: 'Gallery'},
 ] 
 
 

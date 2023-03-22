@@ -4,7 +4,7 @@ import car3 from '../images/car3.png'
 import car4 from '../images/car4.png'
 export const dataPrice = [
     {
-        id:'11',
+        id: 11,
         img: car1,
         type: 'Luxury Sedan',
         Seats:'Four Seaters',
@@ -13,7 +13,7 @@ export const dataPrice = [
 
     },
     {
-        id:'22',
+        id: 22,
         img: car2,
         type: 'Luxury SUV',
         Seats:'Five Seaters',
@@ -22,7 +22,7 @@ export const dataPrice = [
 
     },
     {
-        id:'33',
+        id: 33,
         img: car3,
         type: 'Luxury Van',
         Seats:'Six Seaters',
@@ -31,7 +31,7 @@ export const dataPrice = [
 
     },
     {
-        id:'44',
+        id: 44,
         img: car4,
         type: 'Luxury Limousin',
         Seats:'Four Seaters',

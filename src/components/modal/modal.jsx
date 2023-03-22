@@ -10,11 +10,11 @@ const Modal = ({ data }) => {
   const [states, setStates] = useState(false);
   const { id } = useParams();
   const [product, setProduct] = useState({});
-  const [clear, setClear] = useState({name: '', num: ''})
 
   useEffect(() => {
+    // eslint-disable-next-line eqeqeq
     setProduct(data.find((pr) => pr.id == id));
-  }, []);
+  }, [data, id]);
 
   let position = "fadeIn";
   let position2 = "fadeOut";
