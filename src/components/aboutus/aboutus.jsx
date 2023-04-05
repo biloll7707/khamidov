@@ -10,6 +10,7 @@ const AboutUs = ({ selectedCatHandler, selectedCat }) => {
         sx={{
           display: "flex",
           flexDirection: { xs: "column", sm: "row", md: "row" },
+          width:'100vw',
           maxWidth: "1300px",
           alignItems: "center",
           background: "black",
@@ -17,8 +18,9 @@ const AboutUs = ({ selectedCatHandler, selectedCat }) => {
       >
         <Box
           sx={{
-            height: { xs: "430px", md: "860px" },
-            width: { xs: "350px", md: "700px" },
+            maxHeight: { xs: "430px", md: "860px" },
+            width:'40vw',
+            maxWidth: { xs: "350px", md: "700px" },
             objectFit: "contain",
           }}
         >
@@ -34,6 +36,8 @@ const AboutUs = ({ selectedCatHandler, selectedCat }) => {
             background: "black",
             color: "#fff",
             height: "860px",
+            width:'40vw',
+            maxWidth: { xs: "350px", md: "700px" },
           }}
         >
           <Typography sx={{ color: "#DC143C" }}>Who Are we</Typography>
@@ -59,6 +63,7 @@ const AboutUs = ({ selectedCatHandler, selectedCat }) => {
         sx={{
           display: "flex",
           flexDirection: { xs: "column", sm: "row", md: "row" },
+          width: '100vw',
           maxWidth: "1300px",
           alignItems: "center",
           background: "black",
@@ -70,6 +75,8 @@ const AboutUs = ({ selectedCatHandler, selectedCat }) => {
             pr: { xs: "0", md: "50px" },
             background: "black",
             color: "#fff",
+            width:'40vw',
+            maxWidth: { xs: "350px", md: "700px" },
           }}
         >
           <Typography sx={{ color: "#DC143C" }}>Our Mission</Typography>
@@ -83,7 +90,7 @@ const AboutUs = ({ selectedCatHandler, selectedCat }) => {
             taxes etc. We provide a wide range of financial services for
             businesses and individual purposes.
           </Typography>
-          <Box sx={{ width: {xs:'300px', md:"430px"}, mt: "50px" }}>
+          <Box sx={{ width:'30vw', maxWidth: {xs:'300px', md:"430px"}, mt: "50px" }}>
             <Box sx={{ display: "flex", justifyContent: "space-between" }}>
               <Box>
                 <Typography sx={{ color: "#DC143C", fontSize: "40px" }}>
@@ -122,8 +129,9 @@ const AboutUs = ({ selectedCatHandler, selectedCat }) => {
         </Box>
         <Box
           sx={{
-            height: { xs: "430px", md: "860px" },
-            width: { xs: "350px", md: "700px" },
+            maxHeight: { xs: "430px", md: "860px" },
+            width:'40vw',
+            maxWidth: { xs: "350px", md: "500px" },
             objectFit: "contain",
           }}
         >

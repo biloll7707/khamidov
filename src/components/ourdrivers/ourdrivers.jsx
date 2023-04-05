@@ -46,10 +46,12 @@ const OurDrivers = () => {
           sx={{
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
-            width: {
+            width:'90vw',
+            maxWidth: {
               xs: "450px",
               md: "1280px",
               justifyContent: "space-between",
+              overflow:'scroll',
             },
           }}
         >
@@ -59,6 +61,7 @@ const OurDrivers = () => {
               flexDirection: "column",
               alignItems: "center",
               color: "#fff",
+            
             }}
           >
             <div className="cardBox1">

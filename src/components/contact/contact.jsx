@@ -1,9 +1,9 @@
-import { Call, CheckCircleTwoTone, Email } from "@mui/icons-material";
+import { Call, CheckCircleTwoTone, Email, Map } from "@mui/icons-material";
 import { Box, Paper, Stack, Typography } from "@mui/material";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
-import map from '../images/Map.png'
-import './contact.css'
+import map from "../images/Map.png";
+import "./contact.css";
 
 const Contact = () => {
   const form = useRef();
@@ -26,7 +26,6 @@ const Contact = () => {
           setTimeout(() => {
             setState(false);
           }, 2000);
-
         },
         (error) => {
           setState(false);
@@ -35,7 +34,14 @@ const Contact = () => {
   };
   return (
     <Stack>
-      <Box sx={{ display: "flex",width:{xs:'450px', md:'1280px'}, flexDirection:{xs:'column', md:'row'} }}>
+      <Box
+        sx={{
+          display: "flex",
+          width: "100vw",
+          maxWidth: { xs: "450px", md: "1280px" },
+          flexDirection: { xs: "column", md: "row" },
+        }}
+      >
         <Box
           sx={{
             display: "flex",
@@ -56,8 +62,9 @@ const Contact = () => {
             }}
           />
           <Typography sx={{ mt: "30px" }}>
-            If you have any questions,<br/> you can contact with us so that <br /> we
-            can give you a satisfying answer.
+            If you have any questions,
+            <br /> you can contact with us so that <br /> we can give you a
+            satisfying answer.
           </Typography>
           <Paper
             ref={form}
@@ -69,15 +76,14 @@ const Contact = () => {
               background: "black",
               alignItems: "center",
               mt: "30px",
-              position:'relative',
-              width:{xs:'450px', md:'500px'}
+              position: "relative",
+              width:'40vw',
+              maxWidth: { xs: "450px", md: "500px" },
             }}
           >
             <article className={state ? position : position2}>
-            <CheckCircleTwoTone fontSize='large' color='success'/>
-              <span className="scuesTxt">
-                 Sent
-              </span>
+              <CheckCircleTwoTone fontSize="large" color="success" />
+              <span className="scuesTxt">Sent</span>
             </article>
             <Box sx={{ background: "black" }}>
               <input
@@ -154,8 +160,9 @@ const Contact = () => {
           <Box
             sx={{
               display: "flex",
-              width: {xs:'400px', md:"500px"},
-              flexDirection: {xs:'column', md:"row"},
+              width:'40vw',
+              maxWidth: { xs: "450px", md: "500px" },
+              flexDirection: { xs: "column", md: "row" },
               justifyContent: "space-between",
 
               mt: "60px",
@@ -171,17 +178,17 @@ const Contact = () => {
               <Call
                 sx={{
                   background: "#DC143C",
-                  width: "100px",
-                  height: "100px",
+                  width: "80px",
+                  height: "80px",
                   padding: "20px",
                   borderRadius: "50%",
                   color: "#fff",
                   mb: "20px",
-                  mt:'20px',
+                  mt: "20px",
                 }}
               />
-              <Typography>Phone</Typography>
-              <Typography>+998 97 012 1000</Typography>
+              <Typography sx={{fontSize:'12px'}}>Phone</Typography>
+              <Typography sx={{fontSize:'12px'}}>+998 97 012 1000</Typography>
             </Box>
             <Box
               sx={{
@@ -193,17 +200,17 @@ const Contact = () => {
               <Email
                 sx={{
                   background: "#DC143C",
-                  width: "100px",
-                  height: "100px",
+                  width: "80px",
+                  height: "80px",
                   padding: "20px",
                   borderRadius: "50%",
                   color: "#fff",
                   mb: "20px",
-                  mt:'20px',
+                  mt: "20px",
                 }}
               />
-              <Typography>Email</Typography>
-              <Typography>info@syntaxchaff.com</Typography>
+              <Typography sx={{fontSize:'12px'}}>Email</Typography>
+              <Typography sx={{fontSize:'12px'}}>info@syntaxchaff.com</Typography>
             </Box>
             <Box
               sx={{
@@ -212,27 +219,37 @@ const Contact = () => {
                 alignItems: "center",
               }}
             >
-              <Call
+              <Map
                 sx={{
                   background: "#DC143C",
-                  width: "100px",
-                  height: "100px",
+                  width: "80px",
+                  height: "80px",
                   padding: "20px",
                   borderRadius: "50%",
                   color: "#fff",
                   mb: "20px",
-                  mt:'20px',
+                  mt: "20px",
                 }}
               />
-              <Typography>Address</Typography>
-              <Typography>252 W 43rd St New</Typography>
+              <Typography sx={{fontSize:'12px'}}>Address</Typography>
+              <Typography sx={{fontSize:'12px'}}>252 W 43rd St New</Typography>
             </Box>
           </Box>
         </Box>
         <Box
-          sx={{ textAlign: "center", height: {xs:'500px', md:"930px"}, width: {xs:'450px', md:"600px"}, background:'#fff' }}
+          sx={{
+            textAlign: "center",
+            height: { xs: "500px", md: "930px" },
+            width:'40vw',
+            maxWidth: { xs: "450px", md: "500px" },
+            background: "#fff",
+          }}
         >
-          <img src={map} alt="map" style={{height:'100%', width:'100%', objectFit:'cover'}} />
+          <img
+            src={map}
+            alt="map"
+            style={{ height: "100%", width: "100%", objectFit: "cover" }}
+          />
         </Box>
       </Box>
     </Stack>

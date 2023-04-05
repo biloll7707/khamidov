@@ -1,7 +1,8 @@
 .headerDiv {
     background-image: url(../images/Rectangle\ 1.png);
     height: 500px;
-    width: 1280px;
+    width: 100vw;
+    max-width: 1280px;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,7 +17,8 @@
     position: absolute;
     content: "";
     height: 500px;
-    width: 1280px;
+    width: 100vw;
+    max-width: 1280px;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.472);
@@ -116,7 +118,8 @@ section .btncars:hover {
 .secondHome {
     background-image: url(../images/Rectangle\ 1.png);
     height: 300px;
-    width: 1280px;
+    width: 100vw;
+    max-width: 1280px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -129,7 +132,8 @@ section .btncars:hover {
     position: absolute;
     content: "";
     height: 300px;
-    width: 1280px;
+    width: 100vw;
+    max-width: 1280px;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.472);
@@ -247,24 +251,30 @@ section .btncars:hover {
     border-top-color: #DC143C;
 
 }
+
 @media (max-width: 600px) {
     .headerDiv {
-        width: 450px;
+        width: 100vw;
+        max-width: 450px;
+
 
     }
 
     .headerDiv::after {
-        width: 450px;
+        width: 100vw;
+        max-width: 450px;
 
     }
 
     .cars {
-        width: 450px;
+        width: 100vw;
+        max-width: 450px;
 
     }
 
     section {
-        width: 450px;
+        width: 100vw;
+        max-width: 450px;
     }
 
     section h1 {
@@ -280,28 +290,34 @@ section .btncars:hover {
     }
 
     .commentMainDiv {
-        width: 450px;
+        width: 100vw;
+        max-width: 450px;
         overflow: scroll;
         padding: 0 10px;
     }
 
     .secondHome {
-        width: 450px;
+        width: 100vw;
+        max-width: 450px;
         padding: 10px 15px;
     }
 
     .secondHome::before {
-        width: 450px;
+        width: 100vw;
+        max-width: 450px;
     }
 
     .secondHomebond {
-        width: 450px;
+        width: 100vw;
+        max-width: 450px;
         flex-direction: column;
 
     }
+
     .secondHomebond h1 {
         width: 400px;
     }
+
     .secondHomebond button {
         margin-top: 50px;
     }

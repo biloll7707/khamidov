@@ -27,7 +27,9 @@ const Home = ({ selectedCatHandler, selectedCat }) => {
 
   // useEffect(() => {
   //   setInterval(() => {
-  //     setInd(ind + 1);
+  //     if(document.hasFocus){
+  //       setInd(ind + 1);
+  //     }
   //   }, 5000);
   // }, [ind]);
 

@@ -1,7 +1,7 @@
 .cardBox1 {
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 270px;
+    height: 370px;
     background-image: url(../images/card1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,8 +12,8 @@
 }
 .cardBox2 {
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 270px;
+    height: 370px;
     background-image: url(../images/card2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,8 +24,8 @@
 }
 .cardBox3 {
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 270px;
+    height: 370px;
     background-image: url(../images/card3.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,8 +36,8 @@
 }
 .cardBox4 {
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 270px;
+    height: 370px;
     background-image: url(../images/card4.png);
     background-repeat: no-repeat;
     background-size: cover;

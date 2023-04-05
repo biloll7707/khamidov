@@ -24,14 +24,15 @@ const OrderRide = () => {
       <Typography   sx={{
             fontSize: { xs: "14px", md: "18px" },
             fontWeight: "400",
-            width: { xs: "420px", md: "680px", color: "#fff" },
+            maxWidth: { xs: "420px", md: "680px", color: "#fff" },
             mb: "40px",
           }}>Our department is here to ensure personalized guidance. Our smart team takes care of
 everything. The entire team has been great to work with from start to finish.</Typography>
           <Box sx={{
             display: "flex",
             // flexDirection: { xs: "column", md: "row" },
-            width: {
+            width:'100vw',
+            maxWidth: {
               xs: "420px",
               md: "1280px",
             },
