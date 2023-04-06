@@ -25,13 +25,16 @@ const Home = ({ selectedCatHandler, selectedCat }) => {
     }
   }, [ind, data]);
 
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     if(document.hasFocus){
-  //       setInd(ind + 1);
-  //     }
-  //   }, 5000);
-  // }, [ind]);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+     
+        setInd(ind + 1);
+      
+    }, 5000);
+    return () => {
+      clearInterval(intervalId)
+    }
+  }, [ind]);
 
   const inputsBtn = (i) => {
     setInd(i);
