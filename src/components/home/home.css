@@ -268,13 +268,13 @@ section .btncars:hover {
 
     .cars {
         width: 100vw;
-        max-width: 450px;
+        max-width: 420px;
 
     }
 
     section {
         width: 100vw;
-        max-width: 450px;
+        max-width: 420px;
     }
 
     section h1 {
@@ -291,7 +291,7 @@ section .btncars:hover {
 
     .commentMainDiv {
         width: 100vw;
-        max-width: 450px;
+        max-width: 420px;
         overflow: scroll;
         padding: 0 10px;
     }
@@ -309,7 +309,7 @@ section .btncars:hover {
 
     .secondHomebond {
         width: 100vw;
-        max-width: 450px;
+        max-width: 420px;
         flex-direction: column;
 
     }
